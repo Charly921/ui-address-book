@@ -1,0 +1,6 @@
+.mdc-data-table__table {
+    min-width: 50% !important;
+}
+.mat-mdc-table .mdc-data-table__header-row, .mat-mdc-table .mdc-data-table__row {
+    height: 30px;
+}

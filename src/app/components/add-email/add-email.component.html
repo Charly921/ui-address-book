@@ -1,0 +1,17 @@
+<h2 mat-dialog-title style="margin-bottom: 0.5rem;">Agregar correo</h2>
+<form [formGroup]="emailForm" novalidate autocomplete="off">
+    <mat-dialog-content class="w-100 m-0">
+        <div class="row">
+            <mat-form-field appearance="fill" class="col-sm-12">
+                <mat-label>Correo</mat-label>
+                <input matInput type="email" formControlName="email" required>
+            </mat-form-field>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>Cancelar</button>
+        <button mat-button mat-dialog-close="true" (click)="submitData()" [disabled]="!emailForm.valid" class="btn btn-outline-info">Guardar</button>
+    </mat-dialog-actions>
+</form>
+
+
